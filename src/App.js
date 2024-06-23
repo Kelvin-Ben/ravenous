@@ -1,8 +1,10 @@
+import HomePage from "./pages/HomePage";
+import data from '../src/data.json'
 
 function App() {
   return (
     <div className="App">
-      <h1>This is the initial stage of developing the ravenous app</h1>
+      <HomePage data={data} />
     </div>
   );
 }
