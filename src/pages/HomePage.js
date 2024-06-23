@@ -2,11 +2,11 @@ import React from "react";
 import Hero from "../components/Hero";
 import BusinessList from "../components/BusinessList";
 
-const HomePage = () => {
+const HomePage = ({ data }) => {
   return (
     <div>
       <Hero />
-      <BusinessList />
+      <BusinessList data={data} />
     </div>
   );
 };
