@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import heroImage from '../assets/hero.jpg';
+import heroImage from '../assets/hero.webp';
 import SearchBar from "./SearchBar";
 
 const Hero = () => {
