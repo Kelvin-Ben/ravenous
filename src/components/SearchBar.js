@@ -3,7 +3,7 @@ import { useState } from "react";
 const SearchBar = () => {
   const [business, setBusiness] = useState("");
   const [location, setLocation] = useState("");
-  const [filter, setFilter] = useState("");
+  const [filter, setFilter] = useState("best-match");
   const [activeButton, setActiveButton] = useState("");
 
   const handleBusinessChange = (e) => setBusiness(e.target.value);
@@ -16,7 +16,7 @@ const SearchBar = () => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!business && !location) return
+    if (!business || !location) return
     alert(`Searching Yelp with ${business}, ${location}, ${filter}`)
   }
 
